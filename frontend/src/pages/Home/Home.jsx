@@ -22,7 +22,6 @@ export const Home = () => {
 				try {
 					const query = userQuery(userInfo.sub);
 					const data = await client.fetch(query);
-					console.log(data);
 					setUser(data[0]);
 				} catch (error) {
 					console.log(error);
@@ -35,7 +34,7 @@ export const Home = () => {
 		return () => {
 			console.log("start");
 		};
-	}, [navigate, userInfo]);
+	}, []);
 
 	useEffect(() => {
 		scrollRef.current.scrollTo(0, 0);

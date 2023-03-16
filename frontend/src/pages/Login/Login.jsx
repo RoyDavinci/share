@@ -25,8 +25,6 @@ export const Login = () => {
 		});
 	};
 
-	console.log(process.env.REACT_APP_GOOGLE_CLIENT_ID);
-
 	return (
 		<div className='flex justify-start items-center flex-col h-screen'>
 			<div className='relative w-full h-full'>

@@ -35,7 +35,7 @@ export const Home = () => {
 		return () => {
 			console.log("start");
 		};
-	}, []);
+	}, [navigate, userInfo]);
 
 	useEffect(() => {
 		scrollRef.current.scrollTo(0, 0);
